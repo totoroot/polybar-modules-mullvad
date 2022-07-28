@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 get_connection_status() {
     MULLVAD_VPN_STATUS=$(mullvad status | cut -d ' ' -f3 | tr '[:upper:]' '[:lower:]' | sed 's/://g')
